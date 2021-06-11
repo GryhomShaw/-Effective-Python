@@ -1,0 +1,22 @@
+class Tools:
+    def __init__(self, name, weight):
+        self.name = name
+        self.weight = weight
+
+    def __repr__(self):
+        return f'(Tool: {self.name}, {self.weight})'
+
+#
+# tools = [Tools('level', 1.2), Tools('xgh', 3.456), Tools('hzq', 120)]
+# print(tools)
+# tools.sort(key=lambda x: x.name)
+# print(tools)
+power_tools = [
+    Tools('drill', 4),
+    Tools('circular', 5),
+    Tools('jackhammer', 40),
+    Tools('sander', 4)
+]
+print(power_tools)
+power_tools.sort(key=lambda x: (x.weight, x.name), reverse=True)
+print(power_tools)

@@ -1,0 +1,32 @@
+# from urllib.parse import parse_qs
+# s = 'red=5&blue=0&green='
+# my_values = parse_qs(s, keep_blank_values=True)
+# print(type(my_values))
+# print(repr(my_values))
+# print('Red:     ', my_values.get('red'))
+# print('Green:   ', my_values.get('green'))
+# print('Opacity: ', my_values.get('opacity'))
+# red = my_values.get('red', [''])[0] or 0
+# green = my_values.get('green', [''])[0] or 0
+# opacity = my_values.get('opacity', [''])[0] or 0
+
+
+# snacks = [('bacon', 350), ('dount', 240), ('muffin', 190)]
+# for i in range(len(snacks)):
+#     item = snacks[i]
+#     name = item[0]
+#     calories = item[1]
+#     print(f'#{i+1}: {name} has {calories} calories')
+#
+# for rank, (name, calories) in enumerate(snacks):
+#     print(f'#{rank}: {name} has {calories} calories')
+#
+# flavor_list = ['vanilla', 'chocolate', 'pecan', 'strawberry']
+# for i, flavor in enumerate(flavor_list, 1):
+#     print(f'#{i}\t{flavor} is delicious')
+
+names = ['Cecilia', 'Lise', 'Marie']
+Counts = [len(n) for n in names]
+names.append('Casdasd')
+for name, count in zip(names, Counts):
+    print(f'{name}\t{count}')
